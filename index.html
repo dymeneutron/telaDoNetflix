@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
-    <title>NETFLIX CLONEt</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/style/owl/reponsive.css">
+    <title>NETFLIX CLONE</title>
 </head>
 <body>
-    <HEAder>
+    <header>
         <div class="container">
-            <h2>NETFLIX</h2>
+            <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Series</a>
@@ -17,7 +22,73 @@
                 <a href="#">Documentarios</a>
             </nav>
         </div>
-    </HEAder>
+    </header>
     
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">Star Wars</h3>
+                <p class="descricao" >A queda de Darth Vader e do Império levou ao surgimento de uma nova força sombria: a Primeira Ordem. Eles procuram o jedi Luke Skywalker, desaparecido. A resistência tenta desesperadamente encontrá-lo antes para salvar a galáxia</p>
+                <div class="botoes">
+                    <button class="botao">
+                        <i class="fas fa-play"></i>
+                        Assistir Agora 
+                        
+                    </button> <!-- role é para indicar a todos os dispositivos que este é um botao-->
+                    <button class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        Mais Informações
+                        
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filme">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+               <a href="https://youtu.be/hWBxoH4-4yw" target="_blank"><img src="img/min1.jpg" alt="soul" class="box-filme"></a>
+  
+            </div>
+            <div class="item">
+              <a href="https://youtu.be/rZzxpHUipR8" target="_blank" >  <img src="img/min2.jpg" alt="" class="box-filme"></a>
+            </div>
+            <div class="item">
+              <a href="https://youtu.be/cnqV3wsZlpo" target="_blank">  <img src="img/min3.jpg" alt="" class="box-filme"></a>
+            </div>
+            <div class="item">
+             <a href="https://youtu.be/pyi8QAlHR8k" target="_blank">  <img src="img/min4.jpg" alt="" class="box-filme"></a>
+            </div>
+            <div class="item">
+              <a href="https://youtu.be/rV-BmMbWEj4" target="_blank">  <img src="img/min5.jpg" alt="" class="box-filme"></a>
+            </div>
+            <div class="item">
+              <a href="https://youtu.be/B9U8OgTGDSk" target="_blank">  <img src="img/min6.jpg" alt="" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <img src="img/min7.jpg" alt="" class="box-filme">
+            </div>
+            <div class="item">
+               <img src="img/min8.jpg" alt="" class="box-filme">
+            </div> 
+            <div class="item">
+             <img src="img/min9.jpg" alt="" class="box-filme">
+            </div>
+            <div class="item">
+               <a href="#" target="_blank"> <img src="img/min10.jpg" alt="" class="box-filme"></a>
+            </div>
+            <div class="item">
+               <a href="#" target="_blank"> <img src="img/min11.jpg" alt="" class="box-filme"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/1d512dffb0.js"></script>
+     <script src="js/owl/jquery.min.js"></script>
+     <script src="js/owl/owl.carousel.min.js"></script>
+     <script src="js/owl/setup.js"></script>
+
 </body>
 </html>

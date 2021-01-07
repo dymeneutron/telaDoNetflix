@@ -1,3 +1,103 @@
-body{
-    background-color: blue;
+:root{    /* root é a propriedade para construir as variaveis do css */
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+*{      /*reset css utilizado para caso um nevegador não aceita configurações css ele faz a padronização */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*limite de tudo aqui dentro não ultrapassa a borda da caixa*/
+}
+body{   /**/
+    background-color: var(--preta);    /*cor de fundo*/
+    font-family:Arial, Helvetica, sans-serif;  
+    color: white;
+
+}   
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px; /*propriedade define o tamanho de uma fonte.*/
+    margin-left: 10px;/*propriedade define a margem esquerda de um elemento.*/
+}
+
+header nav a{
+    text-decoration: none;    /*propriedade especifica a decoração adicionada ao texto,nesse caso retira qualquer decoração como subliar links*/
+    color: #AAA;         /*cor da fonte*/
+    margin-right: 10px;     /*propriedade define a margem direita de um elemento*/
+}
+
+header nav a:hover{
+    color: #fff;        /*cor da fonte*/
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px;  /*define o tamanho da fonte*/
+    background:linear-gradient(rgba(0, 0, 0,.50),rgba(0, 0, 0,.50)100%),url('/img/filme-princ.jpg'); /*tratando a imagem para que parece mais escuro*/
+
+    height:400px; /*define a altura de um elemento.*/
+    background-size: cover; /*especifica que a imagem tem que preecher toda a caixa*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 40px; /*define a margem inferior de um elemento.*/
+    
+}
+.titulo{
+    margin-top: 15%;
+    font-size: 40px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color:rgba(0, 0, 0, .50);
+    border:none;
+    color:white;
+
+    padding:15px 30px;
+    margin-right: 12px;
+    font-size:  12px; 
+
+    cursor:pointer; /* mostrar a maozinha quando passar o mause*/
+    transition: .3s ease all;
+}
+
+.botao:hover{ /*seletor é usado para selecionar elementos quando você passa o mouse sobre eles.*/
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;   /*Ele começa em uma nova linha e ocupa toda a largura*/
+}
+
+.carrosel-filme{
+    margin-top: 5px; 
 }
